@@ -1,5 +1,5 @@
 module.exports = {
-	entry: './src/entry.js',
+	entry: './src/index.js',
 	output: {
 		path: __dirname,
 		filename: '/build/bundle.js',
@@ -20,6 +20,9 @@ module.exports = {
 				'sass',
 			],
 		}],
+	},
+	resolve: {
+		extensions: ['', '.js', '.jsx', '.html'],
 	},
 	devtool: 'cheap-module-source-map',
 }
